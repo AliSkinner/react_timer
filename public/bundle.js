@@ -106,11 +106,11 @@
 	var Main = __webpack_require__(223);
 
 	// foundation styles
-	__webpack_require__(224);
+	__webpack_require__(225);
 	$(document).foundation();
 
 	// custom scss
-	__webpack_require__(228);
+	__webpack_require__(229);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -24906,7 +24906,7 @@
 	'use strict';
 
 	var React = __webpack_require__(8);
-	var Navigation = __webpack_require__(230);
+	var Navigation = __webpack_require__(224);
 
 	var Main = function Main(props) {
 	  return React.createElement(
@@ -24936,13 +24936,82 @@
 /* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var React = __webpack_require__(8);
+
+	var _require = __webpack_require__(166),
+	    IndexLink = _require.IndexLink,
+	    Link = _require.Link;
+
+	var Navigation = function Navigation() {
+	  return React.createElement(
+	    'div',
+	    { className: 'top-bar' },
+	    React.createElement(
+	      'div',
+	      { className: 'top-bar-left' },
+	      React.createElement(
+	        'ul',
+	        { className: 'menu' },
+	        React.createElement(
+	          'li',
+	          { className: 'menu-text' },
+	          'React Timer App'
+	        ),
+	        React.createElement(
+	          'li',
+	          { className: 'menu-text' },
+	          React.createElement(
+	            IndexLink,
+	            { to: '/', activeClassName: 'active-link', activeStyle: { fontWeight: 'bold' } },
+	            'Timer'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          { className: 'menu-text' },
+	          React.createElement(
+	            Link,
+	            { to: '/', activeClassName: 'active-link', activeStyle: { fontWeight: 'bold' } },
+	            'Countdown'
+	          )
+	        )
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'top-bar-right' },
+	      React.createElement(
+	        'ul',
+	        { className: 'menu' },
+	        React.createElement(
+	          'li',
+	          { className: 'menu-text' },
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/AliSkinner', target: '_blank' },
+	            'View on Github'
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	module.exports = Navigation;
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(225);
+	var content = __webpack_require__(226);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(227)(content, {});
+	var update = __webpack_require__(228)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -24959,10 +25028,10 @@
 	}
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(226)();
+	exports = module.exports = __webpack_require__(227)();
 	// imports
 
 
@@ -24973,7 +25042,7 @@
 
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports) {
 
 	/*
@@ -25029,7 +25098,7 @@
 
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -25283,16 +25352,16 @@
 
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(229);
+	var content = __webpack_require__(230);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(227)(content, {});
+	var update = __webpack_require__(228)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25309,10 +25378,10 @@
 	}
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(226)();
+	exports = module.exports = __webpack_require__(227)();
 	// imports
 
 
@@ -25321,75 +25390,6 @@
 
 	// exports
 
-
-/***/ },
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(8);
-
-	var _require = __webpack_require__(166),
-	    IndexLink = _require.IndexLink,
-	    Link = _require.Link;
-
-	var Navigation = function Navigation() {
-	  return React.createElement(
-	    'div',
-	    { className: 'top-bar' },
-	    React.createElement(
-	      'div',
-	      { className: 'top-bar-left' },
-	      React.createElement(
-	        'ul',
-	        { className: 'menu' },
-	        React.createElement(
-	          'li',
-	          { className: 'menu-text' },
-	          'React Timer App'
-	        ),
-	        React.createElement(
-	          'li',
-	          { className: 'menu-text' },
-	          React.createElement(
-	            IndexLink,
-	            { to: '/', activeClassName: 'active-link', activeStyle: { fontWeight: 'bold' } },
-	            'Timer'
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          { className: 'menu-text' },
-	          React.createElement(
-	            Link,
-	            { to: '/', activeClassName: 'active-link', activeStyle: { fontWeight: 'bold' } },
-	            'Countdown'
-	          )
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'top-bar-right' },
-	      React.createElement(
-	        'ul',
-	        { className: 'menu' },
-	        React.createElement(
-	          'li',
-	          { className: 'menu-text' },
-	          React.createElement(
-	            'a',
-	            { href: 'https://github.com/AliSkinner', target: '_blank' },
-	            'View on Github'
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-
-	module.exports = Navigation;
 
 /***/ }
 /******/ ]);
