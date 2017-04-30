@@ -25317,7 +25317,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".top-bar,\n.top-bar ul {\n  background-color: #333333; }\n\n.top-bar .menu-text {\n  color: #ffffff; }\n", ""]);
 
 	// exports
 
